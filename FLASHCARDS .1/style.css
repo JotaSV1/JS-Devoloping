@@ -205,6 +205,11 @@
   
   .delete {
     color: #ff5353;
+    transition: 0.2s;
+  }
+
+  .delete:hover {
+    scale: 122%;
   }
   
   .hide {
