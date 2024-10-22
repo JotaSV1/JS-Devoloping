@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplicativo Flashcard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"/>
+<link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="add-flashcard-con">
+        <button id="add-flashcard">Adicionar Flashcard</button>
+      </div>
+
+      <div id="card-con">
+        <div class="card-list-container"></div>
+      </div>
+    </div>
+
+    <div class="question-container hide" id="add-question-card">
+      <h2>Informações Flashcard</h2>
+      <div class="wrapper">
+        <div class="error-con">
+          <span class="hide" id="error">ESPAÇOS NÃO PREENCHIDOS!</span>
+        </div>
+        <i class="fa-solid fa-xmark" id="close-btn"></i>
+      </div>
+
+      <label for="question">Dúvida:</label>
+      <textarea
+        class="input"
+        id="question"
+        placeholder="Insira sua Pergunta..."
+        rows="2"
+      ></textarea>
+      <label for="answer">Resposta:</label>
+      <textarea
+        class="input"
+        id="answer"
+        rows="3"
+        placeholder="Insira a Resposta..."
+      ></textarea>
+      <button id="save-btn">Save</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
