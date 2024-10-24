@@ -59,7 +59,7 @@ function viewlist() {
     div.innerHTML = `
       <p class="question-div">${flashcard.question}</p>
       <p class="answer-div hide">${flashcard.answer}</p>
-      <a href="#" class="show-hide-btn">Show/Hide</a>
+      <a href="#" class="show-hide-btn">Mostrar/Esconder</a>
       <div class="buttons-con">
         <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
         <button class="delete"><i class="fa-solid fa-trash-can"></i></button>
