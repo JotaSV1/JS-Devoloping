@@ -1,6 +1,4 @@
-const rr=[4, 2, 1, 3, 6, 7, 10]
-rr.sort()
-console.log(rr)
+
 function isPrime(num) { //Verifica se os números são primos
     if (num <= 1) return false;
     for (let i = 2; i <= Math.sqrt(num); i++) {
