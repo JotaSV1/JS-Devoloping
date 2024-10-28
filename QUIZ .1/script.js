@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     highScoreDisplay.innerText = `High Score: ${highScore}`;
 
     function fetchCategories() {
-        fetch('https://opentdb.com/api.php?amount=10').then(response => response.json()).then(data => {
+        fetch('https://opentdb.com/api_category.php').then(response => response.json()).then(data => {
             data.trivia_categories.forEach(category => {
                 const option = document.createElement('option');
                 option.value = category.id;
